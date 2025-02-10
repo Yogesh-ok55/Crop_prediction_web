@@ -5,6 +5,11 @@
       "use": "@vercel/python"
     }
   ],
+  "functions": {
+    "api/*.py": {
+      "runtime": "edge"
+    }
+  },
   "routes": [
     {
       "src": "/(.*)",
